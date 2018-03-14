@@ -126,6 +126,40 @@
         </LinearLayout>
 
     </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="40dp"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:onClick="startTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textAllCaps="true"
+        android:background="@android:color/transparent"
+        />
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:onClick=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:textSize="42sp"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:onClick="pauseTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:textAllCaps="true"
+        android:background="@android:color/transparent"
+        />
+</LinearLayout>
 
 
     <Button
@@ -133,8 +167,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="1dp"
         android:background="@android:color/transparent"
         android:onClick="reset"
-        android:text="Reset" />
+        android:text="Reset all" />
+
 </RelativeLayout>
