@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Kicker Counter</string>
+    <string name="addPointA">Add Point</string>
+    <string name="offPointA">Point off</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="scoreText">0</string>
+    <string name="addPointB">Add Point</string>
+    <string name="offPointB">Point off</string>
+    <string name="resetText">Reset all</string>
 </resources>

@@ -8,21 +8,21 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="20dp"
+        android:paddingTop="@dimen/imagePadding"
         android:scaleX="0.75"
         android:scaleY="0.75"
         android:src="@drawable/kiker" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/marginLinear"
         android:orientation="horizontal">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="24dp"
+            android:layout_marginHorizontal="@dimen/marginHorizontalLinear"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -31,46 +31,46 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:padding="4dp"
-                android:text="Team A"
+                android:padding="@dimen/paddingScore"
+                android:text="@string/teamA"
                 android:textColor="#616161"
-                android:textSize="14sp" />
+                android:textSize="@dimen/teamSize" />
 
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="28dp"
+                android:layout_marginBottom="@dimen/marginBottomScore"
+                android:layout_marginTop="@dimen/marginTopScore"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:padding="4dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                android:padding="@dimen/paddingScore"
+                android:text="@string/scoreText"
+                android:textColor="@color/scoreColor"
+                android:textSize="@dimen/scoreTextSize" />
 
             <Button
                 android:id="@+id/addPointTeamA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/marginTopButton"
+                android:alpha="0.9"
                 android:onClick="addPointTeamA"
-                android:text="Add Point"
-                android:alpha="0.9"/>
+                android:text="@string/addPointA" />
 
             <Button
                 android:id="@+id/offPointTeamA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/marginTopButton"
+                android:alpha="0.9"
                 android:onClick="offPointTeamA"
-                android:text="Point off"
-                android:alpha="0.9"/>
+                android:text="@string/offPointA" />
 
         </LinearLayout>
 
         <View
-            android:layout_width="1dp"
+            android:layout_width="@dimen/splitWidht"
             android:layout_height="match_parent"
             android:background="@android:color/darker_gray" />
 
@@ -78,7 +78,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="24dp"
+            android:layout_marginHorizontal="@dimen/marginHorizontalLinear"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -87,79 +87,72 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:padding="4dp"
-                android:text="Team B"
+                android:padding="@dimen/paddingScore"
+                android:text="@string/teamB"
                 android:textColor="#616161"
-                android:textSize="14sp" />
+                android:textSize="@dimen/teamSize" />
 
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="28dp"
+                android:layout_marginBottom="@dimen/marginBottomScore"
+                android:layout_marginTop="@dimen/marginTopScore"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:padding="4dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                android:padding="@dimen/paddingScore"
+                android:text="@string/scoreText"
+                android:textColor="@color/scoreColor"
+                android:textSize="@dimen/scoreTextSize" />
 
             <Button
                 android:id="@+id/addPointTeamB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/marginTopButton"
+                android:alpha="0.9"
                 android:onClick="addPointTeamB"
-                android:text="Add Point"
-                android:alpha="0.9"/>
+                android:text="@string/addPointB" />
 
             <Button
                 android:id="@+id/offPointTeamB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/marginTopButton"
+                android:alpha="0.9"
                 android:onClick="offPointTeamB"
-                android:text="Point off"
-                android:alpha="0.9" />
+                android:text="@string/offPointB" />
 
         </LinearLayout>
 
     </LinearLayout>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_marginBottom="40dp"
-    android:layout_centerInParent="true"
-    android:orientation="horizontal"
-    >
-    <Button
-        android:onClick="startTimer"
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
-        android:textAllCaps="true"
-        android:background="@android:color/transparent"
-        />
-    <Chronometer
-        android:id="@+id/chronometer"
-        android:onClick=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:textSize="42sp"
+        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        />
-    <Button
-        android:onClick="pauseTimer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pause"
-        android:textAllCaps="true"
-        android:background="@android:color/transparent"
-        />
-</LinearLayout>
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/pausePadding"
+            android:text="▌▌"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/pauseSize"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/chronometerPadding"
+            android:onClick="timerClick"
+            android:textSize="@dimen/timerSize" />
+    </LinearLayout>
 
 
     <Button
@@ -167,9 +160,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="@dimen/marginReset"
         android:background="@android:color/transparent"
         android:onClick="reset"
-        android:text="Reset all" />
+        android:text="@string/resetText" />▌
 
 </RelativeLayout>
