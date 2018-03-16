@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imagePadding">20dp</dimen>
+    <dimen name="marginLinear">16dp</dimen>
+    <dimen name="marginHorizontalLinear">24dp</dimen>
+    <dimen name="paddingScore">4dp</dimen>
+    <dimen name="teamSize">14sp</dimen>
+    <dimen name="marginTopScore">4dp</dimen>
+    <dimen name="marginBottomScore">28dp</dimen>
+    <dimen name="scoreTextSize">56sp</dimen>
+    <dimen name="marginTopButton">8dp</dimen>
+    <dimen name="splitWidht">1dp</dimen>
+    <dimen name="timerSize">60sp</dimen>
+    <dimen name="marginReset">1dp</dimen>
+    <dimen name="chronometerPadding">30dp</dimen>
+    <dimen name="pauseSize">20sp</dimen>
+    <dimen name="pausePadding">10dp</dimen>
+    <dimen name="legalSize">8sp</dimen>
+</resources>
